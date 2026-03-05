@@ -11,6 +11,4 @@ public class Endereco extends Pessoa{
     private String uf;
     private String cep;
 
-
-
 }
