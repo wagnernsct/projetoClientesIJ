@@ -1,10 +1,13 @@
 package entities;
 
+import enums.Parentesco;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class Cliente extends Pessoa {
 
+    private Parentesco parentes;
     private String cpf;
     private String email;
     private String telefone;
@@ -21,6 +24,14 @@ public class Cliente extends Pessoa {
 
     public String getEmail() {
         return email;
+    }
+
+    public Parentesco getParentes() {
+        return parentes;
+    }
+
+    public void setParentes(Parentesco parentes) {
+        this.parentes = parentes;
     }
 
     public void setEmail(String email) {
